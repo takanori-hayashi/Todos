@@ -1,4 +1,5 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Todos;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -9,12 +10,25 @@ namespace Todos.Tests
     public class TodoItemTest
     {
         [TestMethod]
-        public void タイトルを返す()
+        public void titleというタイトルを返す()
         {
             // 準備
+            var todoItem = new TodoItem("title");
             // 実行
+            var title = todoItem.Title;
             // 検証
-            Assert.AreEqual(expected, actual);
+            Assert.AreEqual("title", title);
+        }
+
+        [TestMethod]
+        public void タイトルというタイトルを返す()
+        {
+            // 準備
+            var todoItem = new TodoItem("タイトル");
+            // 実行
+            var title = todoItem.Title;
+            // 検証
+            Assert.AreEqual("タイトル", title);
         }
     }
 }
