@@ -30,5 +30,14 @@ namespace Todos.Tests
             // 検証
             Assert.AreEqual("タイトル", title);
         }
+
+        [TestMethod]
+        public void 登録日時をYYYY年mm月dd日のフォーマットで返す()
+        {
+            // 準備
+            // 実行
+            // 検証
+            Assert.AreEqual("タイトル", createAt);
+        }
     }
 }
