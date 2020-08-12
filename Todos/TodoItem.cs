@@ -8,6 +8,8 @@ namespace Todos
     {
         public string Title { get; }
 
+        public bool IsCompleted;
+
         public TodoItem(string title)
         {
             Title = title;
