@@ -48,7 +48,7 @@ namespace Todos.Tests
             // 準備
             var todoItem = new TodoItem("タイトル");
             // 実行
-            todoItem.Completed();
+            todoItem.ToggleCompleted();
             var isCompletetd = todoItem.IsCompleted;
             // 検証
             Assert.AreEqual(true, isCompletetd);

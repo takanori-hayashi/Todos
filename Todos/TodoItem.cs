@@ -14,5 +14,10 @@ namespace Todos
         {
             Title = title;
         }
+
+        public void ToggleCompleted()
+        {
+            IsCompleted = !IsCompleted;
+        }
     }
 }
