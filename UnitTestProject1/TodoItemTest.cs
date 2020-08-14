@@ -1,8 +1,4 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Todos;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Todos.Tests
 {
